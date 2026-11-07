@@ -1,0 +1,18 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": ".vercel/output",
+  "framework": null,
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "cogniloop.digital"
+        }
+      ],
+      "destination": "https://www.cogniloop.digital/$1",
+      "permanent": true
+    }
+  ]
+}
